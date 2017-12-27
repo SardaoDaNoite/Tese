@@ -3,4 +3,10 @@
     <color name="primary">#3F51B5</color>
     <color name="primary_dark">#303F9F</color>
     <color name="accent">#FF4081</color>
+    <color name="fundo">#295295</color>
+    <color name="fundo_ligther">#427BD1</color>
+    <color name="fundo_ligther_ligther">#85A7DB</color>
+    <color name="Login_Button">#3385FF</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#AAAAAA</color>
 </resources>

@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewParent;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 

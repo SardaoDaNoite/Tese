@@ -7,6 +7,7 @@
     <color name="fundo_ligther">#427BD1</color>
     <color name="fundo_ligther_ligther">#85A7DB</color>
     <color name="Login_Button">#3385FF</color>
+    <color name="Login_Button_Press">#84B5FF</color>
     <color name="branco">#FFFFFF</color>
     <color name="cinza">#AAAAAA</color>
 </resources>

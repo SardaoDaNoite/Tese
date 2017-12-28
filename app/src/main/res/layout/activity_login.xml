@@ -26,6 +26,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:textSize="160sp"
+                android:elevation="10dp"
                 android:textColor="@color/cinza"
                 />
         </LinearLayout>
@@ -45,6 +46,8 @@
                 android:background="@drawable/edittext"
                 android:hint="UserName"
                 android:padding="20px"
+                android:drawableRight="@drawable/user"
+                android:elevation="10dp"
                 android:textColor="@color/branco" />
 
             <EditText
@@ -54,8 +57,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="30px"
                 android:background="@drawable/edittext"
-                android:hint="Password"
+                android:hint="  Password"
                 android:padding="20px"
+                android:drawableRight="@drawable/lock"
+                android:elevation="10dp"
                 android:textColor="@color/branco" />
 
             <Button
@@ -65,6 +70,8 @@
                 android:layout_margin="30px"
                 android:background="@drawable/button"
                 android:padding="20px"
+                android:stateListAnimator="@null"
+                android:elevation="10dp"
                 android:text="Login"
                 android:textColor="@color/branco" />
         </LinearLayout>

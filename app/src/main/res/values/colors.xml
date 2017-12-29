@@ -3,11 +3,14 @@
     <color name="primary">#3F51B5</color>
     <color name="primary_dark">#303F9F</color>
     <color name="accent">#FF4081</color>
-    <color name="fundo">#295295</color>
-    <color name="fundo_ligther">#427BD1</color>
-    <color name="fundo_ligther_ligther">#85A7DB</color>
-    <color name="Login_Button">#3385FF</color>
-    <color name="Login_Button_Press">#84B5FF</color>
+    <color name="fundo">#336B87</color>
+    <color name="fundo_ligther">#90AFC5</color>
+    <color name="fundo_ligther_ligther">#647a89</color>
+    <color name="Login_Button">#90AFC5</color>
+    <color name="Login_Button_Press">#647a89</color>
     <color name="branco">#FFFFFF</color>
-    <color name="cinza">#AAAAAA</color>
+    <color name="cinza">#BBBBBB</color>
+    <color name="cinza_claro">#DDDDDD</color>
+    <color name="autum">#763626</color>
+    <color name="shadow">#2A3132</color>
 </resources>

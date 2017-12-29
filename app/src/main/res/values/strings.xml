@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Tese</string>
     <string name="user_icon">&#xf1fe;</string>
+    <string name="pacientes">Pacientes</string>
+    <string name="horario">Horário</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="mensagens">Mensagens</string>
 </resources>

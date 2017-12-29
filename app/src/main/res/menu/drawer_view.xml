@@ -2,13 +2,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_first_fragment"
-            android:title="First" />
+            android:icon="@drawable/user"
+            android:id="@+id/Pacientes"
+            android:title="@string/pacientes" />
         <item
-            android:id="@+id/nav_second_fragment"
-            android:title="Second" />
+            android:icon="@drawable/time"
+            android:id="@+id/Horario"
+            android:title="@string/horario" />
         <item
-            android:id="@+id/nav_third_fragment"
-            android:title="Third" />
+            android:icon="@drawable/message"
+            android:id="@+id/Mensagens"
+            android:title="@string/mensagens" />
+        <item
+            android:icon="@drawable/config"
+            android:id="@+id/Configuracoes"
+            android:title="@string/configuracoes" />
+
     </group>
 </menu>

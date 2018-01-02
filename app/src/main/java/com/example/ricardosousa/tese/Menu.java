@@ -1,5 +1,6 @@
 package com.example.ricardosousa.tese;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -32,6 +33,8 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
         handler.post(Contador);
         Data = (TextView)findViewById(R.id.Data);
         Hora = (TextView)findViewById(R.id.Hora);
+        NavigationView esq = (NavigationView)findViewById(R.id.nvView);
+        esq.setNavigationItemSelectedListener(this);
     }
 
      Runnable Contador = new Runnable() {
@@ -43,12 +46,13 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
             Data.setText(data);
             Hora.setText(hora);
             handler.postDelayed(this,1000);
-            NavigationView esq = (NavigationView)findViewById(R.id.nvView);
         }
     };
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        Intent AMenu = new Intent(Menu.this,Paciente.class);
+        startActivity(AMenu);
         int id = item.getItemId();
         if(id == R.id.Pacientes){
 

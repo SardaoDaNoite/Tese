@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
 
 /*
         <android.support.v7.widget.Toolbar
@@ -20,6 +21,7 @@ public class Paciente extends AppCompatActivity {
 
     private PageAdapter adapter;
     private ViewPager view;
+    private ListView lista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,17 @@ public class Paciente extends AppCompatActivity {
         TabLayout tab = (TabLayout) findViewById(R.id.tabs);
         tab.setupWithViewPager(view);
 
+        Paciente_Info_Lista data[] = new Paciente_Info_Lista[]{
+                new Paciente_Info_Lista("Ricardo", "Masculino", 10),
+                new Paciente_Info_Lista("Ricard", "Masculino1", 11),
+                new Paciente_Info_Lista("Ricar", "Masculino2", 12),
+                new Paciente_Info_Lista("Rica", "Masculino3", 13),
+                new Paciente_Info_Lista("Ric", "Masculino4", 14),
+        };
+
+        ArrayAdapter_Lista_Paciente adapter = new ArrayAdapter_Lista_Paciente(this,R.layout.list,data);
+        lista = (ListView)findViewById(R.id.ListaPacientes);
+        lista.setAdapter(adapter);
 
     }
 
@@ -42,3 +55,4 @@ public class Paciente extends AppCompatActivity {
         viewpage.setAdapter(a);
     }
 }
+

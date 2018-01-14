@@ -33,19 +33,6 @@ public class Paciente extends AppCompatActivity {
         SetupPage(view);
         TabLayout tab = (TabLayout) findViewById(R.id.tabs);
         tab.setupWithViewPager(view);
-
-        Paciente_Info_Lista data[] = new Paciente_Info_Lista[]{
-                new Paciente_Info_Lista("Ricardo", "Masculino", 10),
-                new Paciente_Info_Lista("Ricard", "Masculino1", 11),
-                new Paciente_Info_Lista("Ricar", "Masculino2", 12),
-                new Paciente_Info_Lista("Rica", "Masculino3", 13),
-                new Paciente_Info_Lista("Ric", "Masculino4", 14),
-        };
-
-        ArrayAdapter_Lista_Paciente adapter = new ArrayAdapter_Lista_Paciente(this,R.layout.list,data);
-        lista = (ListView)findViewById(R.id.ListaPacientes);
-        lista.setAdapter(adapter);
-
     }
 
     private void SetupPage(ViewPager viewpage){

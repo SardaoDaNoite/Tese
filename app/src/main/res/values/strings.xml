@@ -6,4 +6,6 @@
     <string name="configuracoes">Configurações</string>
     <string name="mensagens">Mensagens</string>
     <string name="estatisticas">Estatísticas</string>
+    <string name="passworderrada">Password introduzida está errrada</string>
+    <string name="loginerro">Ocorreu um erro no Login por favor tente de novo </string>
 </resources>

@@ -11,6 +11,7 @@ import android.view.ViewParent;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,14 +35,18 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button BLogin  = (Button)findViewById(R.id.login);
+        final Button BLogin  = (Button)findViewById(R.id.login);
         final EditText name = (EditText)findViewById(R.id.Name);
         final EditText pass = (EditText)findViewById(R.id.Password);
 
         BLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                final ProgressBar icon = (ProgressBar)findViewById(R.id.progressBar);
+                icon.setVisibility(View.VISIBLE);
+                BLogin.setEnabled(false);
+                name.setEnabled(false);
+                pass.setEnabled(false);
                 final StringRequest stringRequest = new StringRequest(Request.Method.GET, url+"/"+name.getText()+"/"+pass.getText(),
                         new Response.Listener<String>() {
                             @Override
@@ -50,10 +55,15 @@ public class Login extends AppCompatActivity {
                                     JSONObject reader = new JSONObject(response);
                                     boolean validate = reader.getBoolean("Valid");
                                     if(validate){
+                                        icon.setVisibility(View.INVISIBLE);
                                         Intent AMenu = new Intent(Login.this,Menu.class);
                                         startActivity(AMenu);
                                     }
                                     else {
+                                        icon.setVisibility(View.INVISIBLE);
+                                        BLogin.setEnabled(true);
+                                        name.setEnabled(true);
+                                        pass.setEnabled(true);
                                        Toast erro = Toast.makeText(Login.this,getResources().getString(R.string.passworderrada),Toast.LENGTH_LONG);
                                        erro.show();
                                     }
@@ -64,6 +74,10 @@ public class Login extends AppCompatActivity {
                         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        BLogin.setEnabled(true);
+                        name.setEnabled(true);
+                        pass.setEnabled(true);
+                        icon.setVisibility(View.INVISIBLE);
                         Toast erro = Toast.makeText(Login.this,getResources().getString(R.string.loginerro),Toast.LENGTH_LONG);
                         erro.show();
                     }

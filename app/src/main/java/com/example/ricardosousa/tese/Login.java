@@ -74,6 +74,8 @@ public class Login extends AppCompatActivity {
                         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Intent AMenu = new Intent(Login.this,Menu.class);
+                        startActivity(AMenu);
                         BLogin.setEnabled(true);
                         name.setEnabled(true);
                         pass.setEnabled(true);

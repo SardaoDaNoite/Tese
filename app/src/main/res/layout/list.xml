@@ -12,7 +12,10 @@
         android:layout_height="100dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:contentDescription="Property Image" />
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_foreground"
+        />
 
     <RelativeLayout
         android:id="@+id/infoSection"
@@ -43,8 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:layout_toRightOf="@id/Idade_Lista"
-            android:layout_below="@id/Nome_Lista"
+            android:layout_below="@id/Idade_Lista"
             android:text="Description"
             android:textSize="15sp" />
     </RelativeLayout>

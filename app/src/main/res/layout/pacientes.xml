@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/fundo_ligther"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/add_paciente"
+            android:scaleType="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@color/fundo_ligther_ligther"
+            app:borderWidth="0dp"
+            android:clickable="true" />
 
         <ListView
             android:id="@+id/ListaPacientes"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

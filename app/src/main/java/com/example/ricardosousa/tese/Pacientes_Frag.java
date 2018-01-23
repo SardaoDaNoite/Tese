@@ -1,11 +1,15 @@
 package com.example.ricardosousa.tese;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 /**
@@ -36,5 +40,15 @@ public class Pacientes_Frag extends android.support.v4.app.Fragment {
         ArrayAdapter_Lista_Paciente adapter = new ArrayAdapter_Lista_Paciente(view.getContext(),R.layout.list,data);
         lista = (ListView)view.findViewById(R.id.ListaPacientes);
         lista.setAdapter(adapter);
+        FloatingActionButton floatbutton = (FloatingActionButton)view.findViewById(R.id.floatingActionButton3);
+
+        floatbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),Add_Pacient.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

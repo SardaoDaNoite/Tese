@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/fundo_ligther"
+    android:background="@color/fundo"
     android:layout_height="match_parent">
 
     <FrameLayout
@@ -12,23 +12,21 @@
         android:layout_height="match_parent">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:src="@drawable/add_paciente"
-            android:scaleType="center"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            app:backgroundTint="@color/fundo_ligther_ligther"
-            app:borderWidth="0dp"
-            android:clickable="true" />
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:scaleType="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/add_pacient"
+        app:backgroundTint="@color/branco"
+        android:clickable="true" />
 
         <ListView
             android:id="@+id/ListaPacientes"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </ListView>
 
     </FrameLayout>

@@ -2,6 +2,7 @@ package com.example.ricardosousa.tese;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,7 +51,6 @@ public class ArrayAdapter_Lista_Paciente extends ArrayAdapter<Paciente_Info_List
         Paciente_Info_Lista paciente = data[position];
         holder.Nome.setText(paciente.Nome);
         holder.sexo.setText("Idade: " + paciente.idade + " Sexo: " + paciente.sexo);
-
         return row;
     }
 

@@ -8,16 +8,18 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="20dp"
         android:adjustViewBounds="true"
-        android:src="@mipmap/ic_launcher"
-        android:background="@color/cinza" />
+        android:scaleType="center"
+        android:src="@drawable/paciente"
+        android:tint="@color/branco"
+        android:background="@color/fundo" />
 
     <RelativeLayout
         android:id="@+id/infoSection"
@@ -33,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Street Address"
+            android:textColor="@color/branco"
             android:textSize="18sp" />
 
         <TextView
@@ -42,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Description"
+            android:textColor="@color/branco"
             android:layout_marginRight="20dp"
             android:textSize="15sp" />
         <TextView
@@ -50,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_below="@id/Idade_Lista"
+            android:textColor="@color/branco"
             android:text="Description"
             android:textSize="15sp" />
     </RelativeLayout>

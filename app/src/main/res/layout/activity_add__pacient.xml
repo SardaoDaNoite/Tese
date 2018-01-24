@@ -4,6 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fundo"
     tools:context="com.example.ricardosousa.tese.Add_Pacient">
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="6"
+        android:rowOrderPreserved="true">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="@string/nome"
+            android:inputType="textPersonName"
+            android:padding="20px"
+            android:textColorHint="@color/branco" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:elevation="10dp"
+            android:hint="@string/idade"
+            android:inputType="number"
+            android:padding="20px"
+            android:textColorHint="@color/branco" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            style="@style/spinner_style"
+            android:layout_height="wrap_content"
+            android:layout_column="0" />
+
+    </GridLayout>
 </android.support.constraint.ConstraintLayout>

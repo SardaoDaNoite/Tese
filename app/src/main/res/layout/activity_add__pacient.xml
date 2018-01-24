@@ -15,6 +15,7 @@
         android:rowOrderPreserved="true">
 
         <EditText
+            android:layout_row="0"
             android:id="@+id/editText3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,6 +30,7 @@
             android:textColorHint="@color/branco" />
 
         <EditText
+            android:layout_row="0"
             android:id="@+id/editText4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,10 +45,10 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="100dp"
-            style="@style/spinner_style"
-            android:layout_height="wrap_content"
-            android:layout_column="0" />
+            android:background="@null"
+            android:layout_column="0"
+            android:layout_row="1"
+            />
 
     </GridLayout>
 </android.support.constraint.ConstraintLayout>

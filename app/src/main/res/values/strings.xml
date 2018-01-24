@@ -10,4 +10,15 @@
     <string name="loginerro">Ocorreu um erro no Login por favor tente de novo </string>
     <string name="nome">Nome</string>
     <string name="idade">Idade</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>

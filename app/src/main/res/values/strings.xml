@@ -17,5 +17,5 @@
     <string name="antecedente">Antecedentes</string>
     <string name="notas">Notas</string>
     <string name="nferidas">Nº Feridas</string>
-
+    <string name="descricao">Descrição</string>
 </resources>

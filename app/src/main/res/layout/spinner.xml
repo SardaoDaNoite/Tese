@@ -2,12 +2,11 @@
         android:id="@android:id/text1"
         android:background="@drawable/spinner_shape"
         android:textColor="@color/branco"
-        android:padding="20px"
         android:drawableRight="@drawable/spinner_arrow"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:textSize="20dp"
     />
 
 

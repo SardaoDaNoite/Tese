@@ -7,48 +7,161 @@
     android:background="@color/fundo"
     tools:context="com.example.ricardosousa.tese.Add_Pacient">
 
-    <GridLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="3"
-        android:rowCount="6"
-        android:rowOrderPreserved="true">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:layout_row="0"
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edittext"
-            android:elevation="10dp"
-            android:ems="10"
-            android:hint="@string/nome"
-            android:inputType="textPersonName"
-            android:padding="20px"
-            android:textColorHint="@color/branco" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:layout_row="0"
-            android:id="@+id/editText4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edittext"
-            android:elevation="10dp"
-            android:hint="@string/idade"
-            android:inputType="number"
-            android:padding="20px"
-            android:textColorHint="@color/branco" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:background="@null"
-            android:layout_column="0"
-            android:layout_row="1"
-            />
+                <EditText
+                    android:id="@+id/Nome_Paciente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/nome"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
 
-    </GridLayout>
+                <EditText
+                    android:id="@+id/Morada_Paciente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/morada"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Idade_Paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/idade"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
+
+                <EditText
+                    android:id="@+id/Altura_Paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/altura"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
+
+                <EditText
+                    android:id="@+id/Peso_Paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/peso"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_feridas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Antecedentes_Paciente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/antecedente"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
+
+                <EditText
+                    android:id="@+id/Notas_Paciente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/notas"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco" />
+
+                <EditText
+                    android:id="@+id/nFeridas_Paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext"
+                    android:elevation="10dp"
+                    android:ems="10"
+                    android:hint="@string/nferidas"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/branco"
+                    android:textColorHint="@color/branco"
+                    android:maxLength="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>

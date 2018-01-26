@@ -51,14 +51,15 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        Intent AMenu = new Intent(Menu.this,Paciente.class);
-        startActivity(AMenu);
+
         int id = item.getItemId();
         if(id == R.id.Pacientes){
-
+            Intent AMenu = new Intent(Menu.this,Paciente.class);
+            startActivity(AMenu);
         }
         else if (id == R.id.Horario){
-
+            Intent AMenu = new Intent(Menu.this,StackViewActivity.class);
+            startActivity(AMenu);
         }
         else if (id == R.id.Mensagens){
 

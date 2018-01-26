@@ -18,4 +18,5 @@
     <string name="notas">Notas</string>
     <string name="nferidas">Nº Feridas</string>
     <string name="descricao">Descrição</string>
+    <string name="add_paciente">Adiconar Paciente</string>
 </resources>

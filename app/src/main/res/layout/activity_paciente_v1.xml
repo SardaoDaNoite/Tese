@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fundo"
+    android:layout_height="match_parent"
+    tools:context="com.example.ricardosousa.tese.Paciente_v1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/pacientelistav1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Procurar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColorHint="@color/branco"
+                android:background="@drawable/edittext"
+                android:hint="@string/Procurar"
+                android:padding="10dp"
+                android:drawableRight="@drawable/search"
+                android:elevation="10dp"
+                android:drawableTint="@color/branco"
+                android:textColor="@color/branco"/>
+
+            <android.support.v4.view.ViewPager
+                android:background="@color/edittext1_fundo_darker"
+                android:clipToPadding="false"
+                android:layout_margin="5dp"
+                android:padding="20dp"
+                android:id="@+id/pagevierpaciente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

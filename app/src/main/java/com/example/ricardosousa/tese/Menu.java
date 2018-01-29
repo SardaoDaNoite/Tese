@@ -54,7 +54,7 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
 
         int id = item.getItemId();
         if(id == R.id.Pacientes){
-            Intent AMenu = new Intent(Menu.this,Paciente.class);
+            Intent AMenu = new Intent(Menu.this,Paciente_v1.class);
             startActivity(AMenu);
         }
         else if (id == R.id.Horario){

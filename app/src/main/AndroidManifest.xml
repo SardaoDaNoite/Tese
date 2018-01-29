@@ -34,7 +34,8 @@
         <activity
             android:name=".Add_Pacient"
             android:screenOrientation="portrait" />
-        <activity android:name=".StackViewActivity"></activity>
+        <activity android:name=".StackViewActivity" />
+        <activity android:name=".Paciente_v1"></activity>
     </application>
 
 </manifest>

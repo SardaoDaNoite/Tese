@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/fundo_darker"
     android:paddingTop="10dp"
     android:paddingBottom="10dp">
 
@@ -19,7 +20,7 @@
         android:scaleType="center"
         android:src="@drawable/paciente"
         android:tint="@color/branco"
-        android:background="@color/fundo" />
+        android:background="@color/fundo_ligther" />
 
     <RelativeLayout
         android:id="@+id/infoSection"

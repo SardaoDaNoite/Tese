@@ -3,18 +3,19 @@
     <color name="primary">#3F51B5</color>
     <color name="primary_dark">#303F9F</color>
     <color name="accent">#FF4081</color>
-    <color name="fundo">#336B87</color>
-    <color name="fundo_darker">#28556c </color>
-    <color name="fundo_ligther">#90AFC5</color>
-    <color name="edittext1_fundo">#90AF98</color>
-    <color name="edittext1_fundo_darker">#5b7e64</color>
-    <color name="fundo_ligther_ligther">#647a89</color>
-    <color name="feridas_paciente_fundo">#062f4f</color>
-    <color name="Login_Button">#90AFC5</color>
-    <color name="Login_Button_Press">#647a89</color>
-    <color name="branco">#ffffff</color>
-    <color name="cinza">#BBBBBB</color>
-    <color name="cinza_claro">#DDDDDD</color>
-    <color name="autum">#763626</color>
-    <color name="shadow">#2A3132</color>
+
+
+
+
+    <color name="azulclaro">#9BCCEF</color>
+    <color name="azulescuro">#5698C4</color>
+    <color name="verdeescuro">#366845</color>
+    <color name="verdeclaro">#406b35</color>
+    <color name="verdeamarelo">#6A9B3C</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="preto">#000000</color>
+    <color name="verdelogin">#36685e</color>
+        <color name="verdeloginescuro">#1e5d6a</color>
+
+
 </resources>

@@ -29,12 +29,12 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        handler = new Handler();
-        handler.post(Contador);
-        Data = (TextView)findViewById(R.id.Data);
-        Hora = (TextView)findViewById(R.id.Hora);
-        NavigationView esq = (NavigationView)findViewById(R.id.nvView);
-        esq.setNavigationItemSelectedListener(this);
+       // handler = new Handler();
+        //handler.post(Contador);
+        //Data = (TextView)findViewById(R.id.Data);
+        //Hora = (TextView)findViewById(R.id.Hora);
+      //  NavigationView esq = (NavigationView)findViewById(R.id.nvView);
+      //  esq.setNavigationItemSelectedListener(this);
     }
 
      Runnable Contador = new Runnable() {

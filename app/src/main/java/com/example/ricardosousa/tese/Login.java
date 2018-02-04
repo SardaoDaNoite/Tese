@@ -91,7 +91,7 @@ public class Login extends AppCompatActivity {
         TextView simbol = (TextView) findViewById(R.id.textView);
         Typeface font = Typeface.createFromAsset(getAssets(),"Fonts/fontawesome-webfont.ttf");
         simbol.setTypeface(font);
-        simbol.setText("\uf023");
+        simbol.setText("\uf2bd");
     }
 }
 

@@ -15,7 +15,11 @@
     <color name="branco">#FFFFFF</color>
     <color name="preto">#000000</color>
     <color name="verdelogin">#36685e</color>
-        <color name="verdeloginescuro">#1e5d6a</color>
+    <color name="cinzainicio">#5c6d6e</color>
+    <color name="cinzainicioclaro">#707f80</color>
+    <color name="cinzainicioescuro">#485b5c</color>
+    <color name="cinzainiciomescuro">#34494a</color>
+
 
 
 </resources>

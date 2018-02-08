@@ -16,29 +16,62 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#021c1e"
+            android:background="@color/cinzainicioclaro"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/settings" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#1b3234"
+            android:background="@color/cinzainicio"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bar" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#34494a"
+            android:background="@color/cinzainicioescuro"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bar" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#4d6061"
+            android:background="@color/cinzainiciomescuro"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bar" />
+        </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
